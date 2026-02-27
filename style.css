@@ -138,6 +138,12 @@ section {
   gap: 2rem;
 }
 
+@media (max-width: 640px) {
+  .profiles-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
 .profile-card {
   background: var(--card);
   border: 1px solid var(--border);
@@ -283,6 +289,19 @@ section {
 .blog-body {
   font-size: 0.9rem;
   color: var(--muted);
+}
+
+@media (max-width: 600px) {
+  .blog-entry {
+    grid-template-columns: 1fr;
+    gap: 0.5rem;
+  }
+  .blog-date-col {
+    text-align: left;
+    display: flex;
+    gap: 0.5rem;
+    align-items: baseline;
+  }
 }
 
 footer {
